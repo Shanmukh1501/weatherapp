@@ -18,15 +18,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Run the build command.
-                script {
-                    sh 'npm run build'
-                }
-            }
-        }
-
         stage('Test') {
             steps {
                 // Run the test command.
